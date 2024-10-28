@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+<meta charset='utf-8'/>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<title>StreamMix Inicio</title>
+<meta content='noindex,nofollow' name='robots'/>
+<!-- Finaliza MetaEtiquetas -->
+<!-- Estilos CSS -->
+<link href='https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0' rel='stylesheet'/>
+<link href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0' rel='stylesheet'/>
+<link href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css' rel='stylesheet'/>
+<link crossorigin='anonymous' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css' integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==' referrerpolicy='no-referrer' rel='stylesheet'/>
+
+<!-- Sitelinks Searchbox -->
+<style type='text/css'>
+:root {
+--colorPrincipal: #e74c3c;
+--colorSecundario: #e74c3c;
+--colorEstrella: #F4A900;
+--fondoPrincipal: #111111;
+--fondoSecundario: #414554;
+--fondoTerciario: #282b37;
+--fondoCuaternario: #23252b;
+--topL:#ffca00;
+--topR:#e76d3c;
+--fontColor1: #f5f5f5;
+--fontColor2: #d7d7d7;
+--fontColor3: #83858a;
+--enlaces: #2abdbb;
+--error: #d93636;
+--font-family: "Work Sans", sans-serif;
+--swiper-theme-color: var(--colorPrincipal);
+--swiper-pagination-bullet-inactive-color: var(--fontColor3);
+}
+#000000db
+</style>
+<style>
+/*img:not(.the-logo),.big_slider_item--bg,.player-bg{filter:blur(10px)}*/
+
+@import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: var(--fontColor1);
+  font-family: var(--font-family);
+  list-style: none;
+  counter-reset: list-number;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.max-width {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden; }
+
+a {
+  text-decoration: none; }
+
+body {
+  min-height: 100vh;
+  background: var(--fondoPrincipal);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.separadores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px; }
+
+@media screen and (max-width: 1280px) {
+  .max-width {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden; } }
+
+@media screen and (max-width: 950px) {
+  .swiper-button-next, .swiper-button-prev {
+    display: none; } }
+
+.global-c-w {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%; }
+
+.none {
+  display: none; }
+
+@media screen and (max-width: 610px) {
+  .max-width {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 20px 3px; } }
+
+input, textarea, button, select, a {
+  -webkit-tap-highlight-color: transparent; }
+
+.btn {
+    -webkit-tap-highlight-color: transparent;
+  all: unset;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 200px;
+  border: 2px solid var(--fontColor3);
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: border 0.3s ease-in-out;
+  -o-transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
+  cursor: pointer; }
+  .btn:hover {
+    border: 2px solid var(--fontColor1); }
+  .btn span {
+    font-size: 30px; }
+  .btn.is-play_btn {
+    background: var(--error);
+    border: 2px solid rgba(0, 0, 0, 0.2); }
+    .btn.is-play_btn:hover {
+      border: 2px solid rgba(0, 0, 0, 0.2); }
+
+.btn-play {
+    -webkit-tap-highlight-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 7px;
+  border-radius: 200px;
+  background: #fff;
+  width: 54px;
+  aspect-ratio: 1 / 1; }
+
+.btn-play span {
+  color: #000;
+  font-size: 40px; }
+
+@media screen and (max-width: 600px) {
+  .btn {
+    padding: 5px 15px;
+    font-size: 18px; }
+    .btn span {
+      font-size: 25px; }
+  .btn-play {
+    width: 39px;
+    height: 39px;
+    padding: 5px; }
+    .btn-play span {
+      font-size: 30px; } }
+
+
+
+
+/* HEADER MENU */
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 40px; }
+  .header .main_logo img {
+    max-width: 200px; }
+  .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px; }
+    .header .menu a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--fontColor3);
+      -webkit-transition: color 0.3s ease-in-out;
+      -o-transition: color 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out; }
+      .header .menu a span {
+        -webkit-transition: color 0.3s ease-in-out;
+        -o-transition: color 0.3s ease-in-out;
+        transition: color 0.3s ease-in-out;
+        color: var(--fontColor3);
+        font-size: 18px; }
+      .header .menu a:hover, .header .menu a:hover > span {
+        color: #fff; }
+      .header .menu a.active-navbar-item, .header .menu a.active-navbar-item > span {
+        color: var(--fontColor1); }
+
+@media screen and (max-width: 950px) {
+  body {
+    padding-bottom: calc(80px + 20px); }
+  .nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.18); }
+    
+    
+    .nav .menu {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr;
+      grid-template-columns: repeat(4, 1fr);
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      grid-gap: 0; }
+      .nav .menu li a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 0;
+        padding: 11px; 
+        margin-top:5px;
+        
+        }
+        
+              
+        
+.nav .menu li a span:not(.material-symbols-outlined) {
+          font-size: 13px; }
+          
+.nav .menu li a:not(.active-navbar-item) span:not(.material-symbols-outlined) {
+          display: none; }
+          
+          
+.nav .menu li a:not(.active-navbar-item) span {
+          font-size: 35px; } 
+         
+          }
+          
+          
+          
+          
+
+@media screen and (max-width: 700px) {
+  .header {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
+
+
+
+
+
+
+
+.big_slider_item {
+  width: 100%;
+  overflow: hidden;
+  height: 85vh;
+  position: relative;
+  padding: 20px 0;
+  padding-top: calc(20px + 68px);
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--fondoPrincipal)), color-stop(20%, rgba(0, 0, 0, 0.3))), -webkit-gradient(linear, left top, left bottom, from(var(--fondoPrincipal)), color-stop(10%, rgba(0, 0, 0, 0.3))), -webkit-gradient(linear, left top, right top, from(var(--fondoPrincipal)), color-stop(60%, rgba(0, 0, 0, 0.1)));
+  background: -o-linear-gradient(bottom, var(--fondoPrincipal) 0%, rgba(0, 0, 0, 0.3) 20%), -o-linear-gradient(top, var(--fondoPrincipal) 0%, rgba(0, 0, 0, 0.3) 10%), -o-linear-gradient(left, var(--fondoPrincipal) 0%, rgba(0, 0, 0, 0.1) 60%);
+  background: linear-gradient(to top, var(--fondoPrincipal) 0%, rgba(0, 0, 0, 0.3) 20%), linear-gradient(to bottom, var(--fondoPrincipal) 0%, rgba(0, 0, 0, 0.3) 10%), linear-gradient(to right, var(--fondoPrincipal) 0%, rgba(0, 0, 0, 0.1) 60%); }
+  .big_slider_item .big_slider_item--bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: #000;
+    z-index: -1; }
+  .big_slider_item .big_slider_item--info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 33px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    height: 100%;
+    padding-bottom: 50px; }
+    .big_slider_item .big_slider_item--info .big_slider_item--info_logo {
+      max-width: 400px;
+      max-height: 130px; }
+    .big_slider_item .big_slider_item--info p {
+      width: 40%; }
+      .big_slider_item .big_slider_item--info p br {
+        display: none; }
+        
+        
+        
+        
+    .big_slider_item .big_slider_item--info .big_slider_item--info_tags {
+      
+      display: -webkit-box;
+      display: -ms-flexbox;
+
+      display: inline-block;
+      gap: 15px; 
+      white-space: wrap;
+      text-align: center;
+      
+    }
+      
+      .big_slider_item .big_slider_item--info .big_slider_item--info_tags li {
+        display: inline-block;
+        background: var(--fondoTerciario);
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-size: 14px; 
+        margin-top: 8px;
+      }
+        
+        
+        
+    .big_slider_item .big_slider_item--info .big_slider_item--info_buttons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 16px; 
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+.big_slider_item .big_slider_item--info 
+.big_slider_item--info_buttons 
+.play_btn{
+      
+      background: rgba(0, 0, 0, 0.7);
+      -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(255, 255, 255, 0.18);
+     width: 130px;
+     padding: 5px;
+     border-radius: 25px;
+    }
+    
+.big_slider_item .big_slider_item--info 
+.big_slider_item--info_buttons 
+.play_btn p.ver-ahora{
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  
+}
+    
+
+@media screen and (max-width: 1300px) {
+  .big_slider_item .big_slider_item--info p {
+    width: 50%; } }
+
+@media screen and (max-width: 950px) {
+  .big_slider_item .big_slider_item--info p {
+    width: 70%; } }
+
+@media screen and (max-width: 700px) {
+  .big_slider_item {
+    height: 70vh; }
+    .big_slider_item .big_slider_item--info p {
+      width: 100%;
+      text-align: center; }
+  .big_slider_item--info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 33px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .big_slider_item--info .big_slider_item--info_opt-text {
+      display: none; } }
+
+@media screen and (max-width: 600px) {
+  .big_slider_item .big_slider_item--info_logo {
+    max-height: auto;
+    width: 90%; } }
+
+.big_slider_item {
+  height: auto; }
+  .big_slider_item .big_slider_item--info {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+
+.big_slider_item--info_category {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  margin-top: -16px; }
+
+.big_slider_item--info_rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  font-size: 18px; }
+  .big_slider_item--info_rating i {
+    color: var(--colorEstrella); }
+  .big_slider_item--info_rating span {
+    opacity: .6; }
+
+@media screen and (max-width: 700px) {
+  .big_slider_item {
+    height: auto; }
+    .big_slider_item .big_slider_item--info {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+      .big_slider_item .big_slider_item--info .big_slider_item--info_buttons {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
+
+@media screen and (max-width: 700px) {
+  .bs-title {
+    text-align: center; } }
+
+
+
+
+.posts-section {
+  padding-top: calc(20px + 68px); }
+
+.posts-grid {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 16px; }
+
+@media screen and (max-width: 1350px) {
+  .posts-grid {
+    grid-template-columns: repeat(5, 1fr); } }
+
+@media screen and (max-width: 950px) {
+  .header {
+    justify-content: center; }
+  .posts-grid {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (max-width: 610px) {
+  .posts-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px; } }
+
+.posts-grid .banner-card, .posts-grid .banner-card img {
+  aspect-ratio: 2 / 3; }
+  
+.banner-card {
+  background: var(--fondoCuaternario);
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  aspect-ratio: 2 / 3;
+  -webkit-transition: border 0.3s ease;
+  -o-transition: border 0.3s ease;
+  transition: box-shadow 0.3s ease; }
+  .banner-card img {
+    aspect-ratio: 2 / 3;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 15px;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out,-webkit-transform 0.3s ease-in-out; }
+  .banner-card .banner-card--info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: space-between;
+    -ms-flex-align: space-between;
+    align-items: space-between;
+    font-weight: 700;
+    padding: 16px;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    opacity: 0; }
+    .banner-card .banner-card--info .banner-card--info_top {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      
+      
+.banner-card .banner-card--info .banner-card--info_top span.banner-card--info_top-tags {
+white-space: nowrap;
+        
+}
+        
+        
+.banner-card .banner-card--info .banner-card--info_top .banner-card--info_top-tags {
+font-weight: 600;
+font-size: 11px;
+opacity: .9;
+color: #26A617;
+        
+}
+        
+        
+        
+        
+        
+        
+    .banner-card .banner-card--info .banner-card--bottom {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 16px;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .banner-card .banner-card--info .banner-card--bottom .card-play-btn {
+        padding: 3px;
+        background: var(--fontColor1);
+        border-radius: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .banner-card .banner-card--info .banner-card--bottom .card-play-btn span {
+          color: #111;
+          font-size: 22px; }
+    .banner-card .banner-card--info span {
+      white-space: nowrap;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      width: 100%; }
+      .banner-card .banner-card--info span i {
+        color: var(--colorEstrella); }
+  .banner-card:hover .banner-card--info {
+    opacity: 1; }
+  .banner-card:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+
+.banner-card.banner-card-tags {
+  border: 2px solid var(--fontColor3); }
+  .banner-card.banner-card-tags:hover {
+    border: 2px solid var(--fontColor1); }
+  .banner-card.banner-card-tags .banner-card--info {
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    opacity: 1;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center; }
+
+@media screen and (min-width: 850px) {
+  .banner-card.banner-card-tags .banner-card--info {
+    font-size: 25px; } }
+
+.big_slider_item--info h1 {
+  font-size: 20px; }
+
+span.the-rata{
+  margin-left: -10px
+}
+.tag-item {
+  display: inline-block;
+  margin-right: 8px; /* Espacio entre elementos */
+  white-space: nowrap; /* Evita el salto de línea */
+}
+
+.tag {
+  
+  padding: 4px 8px;
+  border-radius: 4px;
+  /* Estilos adicionales según sea necesario */
+}
+
+  
+
+footer {
+  width: 100%;
+  margin-top: 50px; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px; }
+
+.social-links, .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .social-links a, .footer-links a {
+    color: var(--fontColor3);
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease; }
+    .social-links a:hover, .footer-links a:hover {
+      color: var(--fontColor1); }
+    .social-links a i, .footer-links a i {
+      color: var(--fontColor3);
+      -webkit-transition: color 0.3s ease;
+      -o-transition: color 0.3s ease;
+      transition: color 0.3s ease; }
+      .social-links a i:hover, .footer-links a i:hover {
+        color: var(--fontColor1); }
+
+.social-links {
+  font-size: 25px; }
+
+@media screen and (max-width: 700px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 30px; } }
+    
+    
+    
+    
+    
+</style>
+<style>
+ .list_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 0; }
+  .list_header a {
+    color: var(--enlaces);
+    font-size: 18px; }
+
+@media screen and (max-width: 570px) {
+  .list_header h2 {
+    font-size: 18px; }
+  .list_header a {
+    font-size: 15px; } }
+
+.top-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 10px;
+  background: linear-gradient(to right, var(--topL), var(--topR));
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 0 0 15px 0;
+  z-index: 14; }
+
+.banner-card.banner-card-istop {
+  border: none; }
+  .banner-card.banner-card-istop:hover {
+    border: none; }
+
+@media screen and (max-width: 700px) {
+  .top-number {
+    padding: 5px 10px;
+    font-size: 18px; } }
+
+.banner-card-istop.banner-card {
+  aspect-ratio: 2 / 3; }
+  .banner-card-istop.banner-card img {
+    aspect-ratio: 2 / 3; }
+  .banner-card-istop.banner-card .banner-card--info {
+    background: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0) 30%);
+    display: flex;
+    justify-content: flex-end; }
+    .banner-card-istop.banner-card .banner-card--info span {
+      font-size: 14px; }
+      
+      
+.notification-container {
+  position: relative;
+  top: 10px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 98%; 
+  z-index: 1; 
+  margin-bottom: 15px;
+}
+
+.notification {
+  background-color: #f44336; 
+  color: #fff; 
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  
+}
+      
+
+</style>
+<style>
+.circular {
+  -webkit-animation: rotate 1.5s linear infinite;
+  animation: rotate 1.5s linear infinite;
+  height: 84px;
+  position: relative;
+  width: 84px; }
+
+.circular .path {
+  -webkit-animation: dash 1.5s ease-in-out infinite;
+  animation: dash 1.5s ease-in-out infinite;
+  cx: 42px;
+  cy: 42px;
+  fill: none;
+  r: 16.8px;
+  stroke: #fff;
+  stroke-dasharray: 1%,200%;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  stroke-width: 4; }
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1%,200%;
+    stroke-dashoffset: 0; }
+  50% {
+    stroke-dasharray: 90%,200%;
+    stroke-dashoffset: -35%; }
+  100% {
+    stroke-dasharray: 90%,200%;
+    stroke-dashoffset: -124%; } }
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1%,200%;
+    stroke-dashoffset: 0; }
+  50% {
+    stroke-dasharray: 90%,200%;
+    stroke-dashoffset: -35%; }
+  100% {
+    stroke-dasharray: 90%,200%;
+    stroke-dashoffset: -124%; } 
+    
+</style>
+<meta content='never' name='referrer'/>
+
+</head>
+<body>
+<div class='global-c-w contenido' id="Inicio">
+<!-- HEADER -->
+<header>
+<div class='header max-width'>
+<!-- LOGO -->
+<a class='main_logo'>
+<img alt='logo' src='https://i.ibb.co/LrzwpPY/2qVZAx4.jpg'/>
+</a>
+<!-- MENU -->
+<nav class='nav'>
+<ul class='menu'>
+<li><a class='active-navbar-item' href='go:INICIO' id="inicioBtn">
+<span class='material-symbols-outlined'> home </span>
+<span>INICIO</span></a></li>
+<li><a href='go:Buscar'>
+<span class='material-symbols-outlined'> search </span>
+<span>BÚSQUEDA</span></a></li>
+<li><a href='go:MY LISTA'>
+<span class='material-symbols-outlined'> playlist_play  </span>
+<span>MY LISTA</span></a></li>
+<li><a href='go:AJUSTES' id="seriesBtn"><span class='material-symbols-outlined'> settings </span>
+<span>AJUSTES</span></a></li>
+
+</ul>
+</nav>
+</div>
+</header>
+<!-- HOME FEATURED -->
+<div class='swiper-slide'>
+<div class='big_slider_item'>
+<div class='big_slider_item--bg' style='background: url("") no-repeat center center / cover;'></div>
+<div class='big_slider_item--info max-width'>
+<h1></h1>
+<ul class='big_slider_item--info_tags'>
+</ul>
+<p class='big_slider_item--info_resume'></p>
+<ul class='big_slider_item--info_buttons'>
+
+
+<li class="play_btn">
+<a class='btn-play' href=''>
+<span class='material-symbols-rounded'> play_arrow </span> <p class="ver-ahora">Ver Ahora</p>
+</a>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const playButton = document.querySelector('.btn-play');
+const apiUrl = `https://mediapanel.site/dashboard/api_movie.php`;
+
+async function fetchRandomEntry() {
+try {
+const data = await fetchData();
+processRandomEntry(data);
+} catch (error) {
+console.error('Error fetching data:', error.message);
+}
+}
+
+async function fetchData() {
+const tokenRandom = '221016'; // Reemplaza con tu propio Token de MEDIAPANEL
+const ramdonnombreJSON = 'SAMovies'; // Reemplaza con tu propio nombreJSON de MEDIAPANEL
+
+const response = await fetch(`${apiUrl}?token=${tokenRandom}&json=${ramdonnombreJSON}`);
+if (!response.ok) {
+throw new Error(`HTTP error! Status: ${response.status}`);
+}
+const data = await response.json();
+
+
+if (!data.movies || !data.series || !data.anime) {
+throw new TypeError('Unexpected data structure');
+}
+
+return data;
+}
+
+function processRandomEntry(data) {
+const allEntries = [
+...data.movies.map(entry => ({ ...entry, category: 'movies' })),
+...data.series.map(entry => ({ ...entry, category: 'series' })),
+...data.anime.map(entry => ({ ...entry, category: 'anime' }))
+];
+
+const randomEntry = selectRandomEntry(allEntries);
+if (!randomEntry) {
+console.error('No hay entradas disponibles');
+return;
+}
+updateDOM(randomEntry);
+}
+
+function selectRandomEntry(entries) {
+return entries.length > 0 ? entries[Math.floor(Math.random() * entries.length)] : null;
+}
+
+function updateDOM(randomEntry) {
+const bgElement = document.querySelector('.big_slider_item--bg');
+const titleElement = document.querySelector('.big_slider_item--info h1');
+const tagsElement = document.querySelector('.big_slider_item--info_tags');
+const resumeElement = document.querySelector('.big_slider_item--info_resume');
+const favButton = document.querySelector('.play_btn');
+
+if (!bgElement || !titleElement || !tagsElement || !resumeElement || !favButton) {
+console.error('DOM elements missing');
+return;
+}
+
+bgElement.style.backgroundImage = `url("${randomEntry.url_imagen}")`;
+titleElement.textContent = randomEntry.titulo;
+
+const sinopsisWords = randomEntry.sinopsis.split(' ').slice(0, 35).join(' ') + '...';
+resumeElement.textContent = sinopsisWords;
+
+
+tagsElement.innerHTML = '';
+const categoryLi = document.createElement('li');
+categoryLi.classList.add('tag-item');
+tagsElement.appendChild(categoryLi);
+
+const categorySpan = document.createElement('span');
+categorySpan.textContent = randomEntry.category;
+categorySpan.classList.add('tag');
+categoryLi.appendChild(categorySpan);
+
+if (randomEntry.etiquetas) {
+const tagsArray = randomEntry.etiquetas.split(',').map(tag => tag.trim());
+tagsArray.forEach(tag => {
+const tagLi = document.createElement('li');
+tagLi.classList.add('tag-item');
+tagsElement.appendChild(tagLi);
+
+const tagSpan = document.createElement('span');
+tagSpan.textContent = tag;
+tagSpan.classList.add('tag');
+tagLi.appendChild(tagSpan);
+});
+}
+
+playButton.setAttribute('data-tmdb-id', randomEntry.id_tmdb);
+playButton.setAttribute('data-category', randomEntry.category);
+favButton.setAttribute('play_btn', randomEntry.id_tmdb);
+}
+
+playButton.addEventListener('click', function(event) {
+event.preventDefault();
+const tmdbId = this.getAttribute('data-tmdb-id');
+const category = this.getAttribute('data-category');
+localStorage.setItem('tmdbId', tmdbId);
+redirectToCategory(category);
+});
+
+function redirectToCategory(category) {
+switch (category) {
+case 'movies':
+window.location.href = 'go:V2EM';
+break;
+case 'series':
+window.location.href = 'go:Series2';
+break;
+case 'anime':
+window.location.href = 'go:ES';
+break;
+default:
+console.error('Categoría no válida:', category);
+window.location.href = 'go:default';
+break;
+}
+}
+
+fetchRandomEntry();
+});
+</script>
+
+
+
+
+<div class='bs-blogger'>
+<!-- Entradas -->
+<div class='section' id='Blog'>
+
+
+<div class='widget PopularPosts' data-version='1' id='PopularPosts1'>
+<h2 class='max-width' sytle='padding-bottom: 0;'>Top Semanal  </h2>
+<div class='widget-content popular-posts '>
+<ul class='swiper topTen max-width'>
+<div class='swiper-wrapper' id="popular">
+  
+<script>
+// Para cambiar el TOP SEMANAL a TOP HOY en la api tmdbTrendingUrl
+// week - Semana
+// day - Hoy
+
+// Para cambiar el tipo de top en esta API tmdbTrendingUrl
+// movie - Películas
+// tv - Series y animes
+// all - Películas, series y animes
+
+
+document.addEventListener('DOMContentLoaded', function () {
+      
+const tokenKey = '221016'; //Reemplaza con tu propio token de MEDIAPANEL
+const nombreJSONKey = 'SAMovies'; //Reemplaza con tu propia nombreJSON de MEDIAPANEL
+      
+      
+const popularApiUrl = `https://mediapanel.site/dashboard/api_movie.php?token=${tokenKey}&json=${nombreJSONKey}`;
+const tmdbTrendingUrl = 'https://api.themoviedb.org/3/trending/all/week?api_key=cc5b94165972aa509a349161d13d4fc9';
+
+async function fetchTrendingIds() {
+try {
+const response = await fetch(tmdbTrendingUrl);
+if (!response.ok) {
+throw new Error(`Error en la solicitud: ${response.status}`);
+}
+const data = await response.json();
+const trendingIds = data.results.map(item => item.id);
+return trendingIds;
+} catch (error) {
+console.error('Error al obtener las tendencias de TMDb:', error);
+return [];
+}
+}
+
+async function fetchData(trendingIds) {
+try {
+const response = await fetch(popularApiUrl);
+if (!response.ok) {
+throw new Error(`Error en la solicitud: ${response.status}`);
+}
+const data = await response.json();
+
+
+const moviesWithCategories = data.movies || [];
+const seriesWithCategories = data.series || [];
+const animeWithCategories = data.anime || [];
+
+
+// Filtrar los datos según los IDs de tendencias de TMDB
+const filteredMovies = filterByTrendingIds(moviesWithCategories, trendingIds);
+const filteredSeries = filterByTrendingIds(seriesWithCategories, trendingIds);
+const filteredAnime = filterByTrendingIds(animeWithCategories, trendingIds);
+
+
+let combinedItems = [...filteredMovies, ...filteredSeries, ...filteredAnime];
+
+// Asignar categorías a los elementos combinados
+combinedItems = assignCategories(combinedItems, moviesWithCategories, seriesWithCategories, animeWithCategories);
+
+console.log('Top semanal Items:', combinedItems); // Verificar los elementos combinados antes de poblar las tarjetas
+
+combinedItems.sort((a, b) => {
+const idA = parseInt(a.id_tmdb);
+const idB = parseInt(b.id_tmdb);
+return trendingIds.indexOf(idA) - trendingIds.indexOf(idB);
+});
+
+// Poblar el contenedor con las tarjetas dinámicamente
+populateCards('popular', combinedItems);
+
+} catch (error) {
+console.error('Error al obtener los datos de la API:', error);
+}
+}
+
+function filterByTrendingIds(items, trendingIds) {
+return items?.filter(item => trendingIds.includes(parseInt(item.id_tmdb))) || [];
+}
+
+function assignCategories(combinedItems, movies, series, anime) {
+return combinedItems.map(item => {
+if (movies.includes(item)) {
+item.category = 'movies';
+} else if (series.includes(item)) {
+item.category = 'series';
+} else if (anime.includes(item)) {
+item.category = 'anime';
+} else {
+item.category = 'default'; // Categoría por defecto si no se encuentra en ninguna fuente específica
+}
+return item;
+});
+}
+
+function populateCards(containerId, items) {
+const swiperWrapper = document.getElementById(containerId);
+
+
+swiperWrapper.innerHTML = '';
+
+
+// Crear y añadir tarjetas dinámicamente
+items.forEach((item, index) => {
+const card = document.createElement('a');
+card.className = 'swiper-slide banner-card banner-card-tags banner-card-istop';
+card.href = '#';
+
+const topNumber = document.createElement('h1');
+topNumber.className = 'top-number';
+topNumber.textContent = `#${index + 1}`;
+
+const image = document.createElement('img');
+image.src = item.url_imagen;
+image.alt = item.titulo;
+image.border = '0';
+
+const bannerInfo = document.createElement('div');
+bannerInfo.className = 'banner-card--info';
+
+const title = document.createElement('span');
+title.textContent = item.titulo;
+
+card.setAttribute('data-tmdb-id', item.id_tmdb);
+card.setAttribute('data-category', item.category);
+
+
+card.addEventListener('click', function(event) {
+event.preventDefault();
+
+const tmdbId = this.getAttribute('data-tmdb-id');
+localStorage.setItem('tmdbId', tmdbId);
+
+// Redirección dependiendo de la categoría
+switch (item.category) {
+case 'movies':
+window.location.href = 'go:V2EM';
+break;
+case 'series':
+window.location.href = 'go:Series2';
+case 'anime':
+window.location.href = 'go:ES';
+break;
+default:
+window.location.href = 'URL_DE_REDIRECCIÓN_POR_DEFECTO';
+break;
+}
+});
+
+bannerInfo.appendChild(title);
+card.appendChild(topNumber);
+card.appendChild(image);
+card.appendChild(bannerInfo);
+swiperWrapper.appendChild(card);
+});
+}
+
+async function initialize() {
+const trendingIds = await fetchTrendingIds();
+if (trendingIds && trendingIds.length > 0) {
+fetchData(trendingIds);
+} else {
+console.error('No se obtuvieron IDs de tendencias.');
+}
+}
+
+initialize();
+});
+</script>
+  
+</div>
+</ul>
+<div class='clear'></div>
+</div>
+</div>
+
+
+<!--  PELICULAS  -->
+<div class='widget LinkList' data-version='1' id='LinkList1'>
+  <div class='widget'>
+    <div class='widget-header sectionIndicator list_header max-width'>
+      <h2 class='widget-title bs-section-title'>Últimas Películas</h2>
+      <a class='wjs-section__more see-all-btn' href='go:Peliculas' rel='nofollow'>Ver más</a>
+    </div>
+    <div class='widget-content swiper mySwiper max-width'>
+      <div class='wjs-section swiper-wrapper category' id="movies-container">
+        <!-- Las películas se añadirán aquí -->
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- SERIES -->
+<div class='widget LinkList' data-version='1' id='LinkList1'>  
+  
+  <div class='widget'>
+    <div class='widget-header sectionIndicator list_header max-width'>
+      <h2 class='widget-title bs-section-title'>Últimas Series y Doramas</h2>
+      <a class='wjs-section__more see-all-btn' href='go:Series' rel='nofollow'>Ver más</a>
+    </div>
+    <div class='widget-content swiper mySwiper max-width'>
+      <div class='wjs-section swiper-wrapper category' id="series-container">
+
+
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+
+<!-- ANINES -->
+<div class='widget LinkList' data-version='1' id='LinkList1'>  
+  
+  
+  <div class='widget'>
+    <div class='widget-header sectionIndicator list_header max-width'>
+      <h2 class='widget-title bs-section-title'>Últimos Animes</h2>
+      <a class='wjs-section__more see-all-btn' href='go:Anime' rel='nofollow'>Ver más</a>
+    </div>
+    <div class='widget-content swiper mySwiper max-width'>
+      <div class='wjs-section swiper-wrapper category' id="anime-container">
+        <!-- Los animes se añadirán aquí -->
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+
+<!-- Scriot para visualizar las peliculas, series, animes -->
+<!-- Nota: Damas cambia el token, nombreJSON por el Tuyo -->
+<script>
+const token = '221016'; //Reemplaza con tu propio token de MEDIAPANEL
+const nombreJSON = 'SAMovies'; //Reemplaza con tu propia nombreJSON de MEDIAPANEL
+const apiKeyTMDB = 'cc5b94165972aa509a349161d13d4fc9'; // Reemplaza con tu propia API key de TMDB o Puede dejar la que esta definina
+
+const fetchAndRenderData = async (url, category) => {
+try {
+//console.log(`Fetching data from ${url} for category ${category}`);
+const response = await fetch(url);
+
+if (!response.ok) {
+throw new Error(`HTTP error! status: ${response.status}`);
+}
+
+const contentType = response.headers.get('content-type');
+if (!contentType || !contentType.includes('application/json')) {
+throw new TypeError("Response not JSON");
+}
+
+const data = await response.json();
+//console.log(`Data fetched for category ${category}:`, data);
+
+renderCards(data[category].slice(-15), category); // Limita a las Primeras 15
+
+//renderCards(data[category].slice(0, 15), category); // Limita a las Ultimas 15
+
+
+} catch (error) {
+console.error(`Error fetching data for category ${category}:`, error);
+// Handle the error, e.g., display a message to the user or try to fetch the data again
+}
+};
+
+const renderCards = (items, category) => {
+const containerId = `${category}-container`;
+const container = document.getElementById(containerId);
+if (!container) {
+console.error(`Container ${containerId} not found in DOM for category ${category}.`);
+return;
+}
+
+if (!Array.isArray(items)) {
+//console.error(`Data for category ${category} is not an array:`, items);
+return;
+}
+
+items.reverse();
+
+items.forEach(item => {
+try {
+//console.log(`Rendering item:`, item); // Verifica la estructura del item
+const { titulo, url_imagen, id_tmdb} = item;
+
+if (!titulo || !url_imagen || !id_tmdb) {
+throw new Error(`Item missing required properties: ${JSON.stringify(item)}`);
+}
+
+// Creación de la tarjeta
+const card = document.createElement('a');
+card.href = `!#`; 
+card.classList.add('swiper-slide', 'banner-card');
+card.setAttribute('data-tmdb-id', id_tmdb);
+
+fetch(`https://api.themoviedb.org/3/${category === 'movies' ? 'movie' : 'tv'}/${id_tmdb}?api_key=${apiKeyTMDB}`)
+.then(response => response.json())
+.then(data => {
+const rating = data.vote_average.toFixed(1);
+
+card.innerHTML = `
+<img src="${url_imagen}" alt="">
+<div class="banner-card--info">
+<div class="banner-card--info_top">
+<span>${titulo}</span>
+<!--<span class="banner-card--info_top-tags">${category.toUpperCase()}</span>-->
+</div>
+<div class="banner-card--bottom">
+<span class="the-rata">${rating}<i class="fa-solid fa-star"></i></span>
+<div class="card-play-btn">
+<span class="material-symbols-rounded">play_arrow</span>
+</div>
+</div>
+</div>
+`;
+
+card.addEventListener('click', function(event) {
+event.preventDefault(); 
+
+const tmdbId = this.getAttribute('data-tmdb-id');
+localStorage.setItem('tmdbId', tmdbId);
+
+// Redirección dependiendo de la categoría
+switch (category) {
+case 'movies':
+window.location.href = `go:V2EM`;
+break;
+case 'series':
+window.location.href = `go:ES`;
+break;
+case 'anime':
+window.location.href = `go:ES`;
+break;
+default:
+window.location.href = 'go:default'; // Si no se especifica una categoría válida
+break;
+}
+});
+
+})
+.catch(error => {
+console.error(`Error fetching TMDB data for ${category} ${id_tmdb}:`, error);
+});
+
+container.appendChild(card); 
+
+} catch (error) {
+console.error(`Error rendering item:`, error);
+
+}
+});
+};
+
+const apiUrlMovies = `https://mediapanel.site/dashboard/api_movie.php?token=${token}&json=${nombreJSON}`;
+const apiUrlSeries = `https://mediapanel.site/dashboard/api_series.php?token=${token}&json=${nombreJSON}`;
+const apiUrlAnimes = `https://mediapanel.site/dashboard/api_animes.php?token=${token}&json=${nombreJSON}`;
+
+fetchAndRenderData(apiUrlMovies, 'movies');
+fetchAndRenderData(apiUrlSeries, 'series');
+fetchAndRenderData(apiUrlAnimes, 'anime');
+
+</script>
+
+
+
+
+
+<!-- all index pages -->
+<script src='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js'></script>
+<script>
+let swiper = new Swiper(".mySwiper", { freeMode: true,slidesPerView: 3, spaceBetween: 5, breakpoints: { 700: { slidesPerView: 4, spaceBetween: 5 }, 1050: { slidesPerView: 5, spaceBetween: 23 }, 1550: { slidesPerView: 6, spaceBetween: 23 }, }, }), 
+  
+topTen = new Swiper(".topTen", { freeMode: true,slidesPerView: 3, spaceBetween: 5, breakpoints: { 700: { slidesPerView: 4, spaceBetween: 5 }, 1050: { slidesPerView: 5, spaceBetween: 23 }, 1550: { slidesPerView: 6, spaceBetween: 23 }, }, }), 
+  
+swiper2 = new Swiper(".mySwiper2", { slidesPerView: 1, spaceBetween: 20, breakpoints: { 700: { slidesPerView: 2, spaceBetween: 20 } }, }), 
+  
+swiper3 = new Swiper(".tagsSlider", { slidesPerView: 2, spaceBetween: 20, breakpoints: { 850: { slidesPerView: 3, spaceBetween: 25 }, 1550: { slidesPerView: 4 }, }, });
+</script>
+<script>eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('3.b("a",()=>{9.8(3.7(".0-6")).5((0,2)=>{0.4=`#${2+1}`})});',12,12,'top||index|document|innerText|forEach|number|querySelectorAll|from|Array|DOMContentLoaded|addEventListener'.split('|'),0,{}))</script>
+
+
+</body>
+</html>
